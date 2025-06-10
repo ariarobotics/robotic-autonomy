@@ -14,9 +14,9 @@
 
 ## Group Members  
 Please enter your github usernames here
-- Member 1: __________________  
-- Member 2: __________________  
-- Member 3: __________________  
+- Member 1: boraayhan  (Bora A.)
+- Member 2: peterluoyu (Peter Y.)
+- Member 3: adambass2036 (Adam B.)
 
 ---
 You can find all the tutorials here: https://docs.ros.org/en/humble/Tutorials.html
@@ -24,24 +24,24 @@ You can find all the tutorials here: https://docs.ros.org/en/humble/Tutorials.ht
 ## Beginner: CLI tools  
 [Go to CLI Tools Tutorial](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools.html)
 
-- [-] Configuring environment  
-- [ ] Using turtlesim, ros2, and rqt  
-- [ ] Understanding nodes  
-- [ ] Understanding topics  
-- [ ] Understanding services  
-- [ ] Understanding parameters  
-- [ ] Understanding actions  
-- [ ] Using rqt_console to view logs  
-- [ ] Launching nodes  
-- [ ] Recording and playing back data  
+- [x] Configuring environment  
+- [x] Using turtlesim, ros2, and rqt  
+- [x] Understanding nodes  
+- [x] Understanding topics  
+- [x] Understanding services  
+- [x] Understanding parameters  
+- [x] Understanding actions  
+- [x] Using rqt_console to view logs  
+- [x] Launching nodes  
+- [x] Recording and playing back data  
 
 ---
 
 ## Beginner: Client libraries  
 [Go to Client Libraries Tutorial](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries.html)
 
-- [ ] Using colcon to build packages  
-- [ ] Creating a workspace  
+- [x] Using colcon to build packages  
+- [x] Creating a workspace  
 - [ ] Creating a package  
 - [ ] Writing a simple publisher and subscriber (Python)  
 - [ ] Writing a simple service and client (Python)  
