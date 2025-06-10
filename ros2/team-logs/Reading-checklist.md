@@ -24,7 +24,7 @@ You can find all the tutorials here: https://docs.ros.org/en/humble/Tutorials.ht
 ## Beginner: CLI tools  
 [Go to CLI Tools Tutorial](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools.html)
 
-- [ ] Configuring environment  
+- [-] Configuring environment  
 - [ ] Using turtlesim, ros2, and rqt  
 - [ ] Understanding nodes  
 - [ ] Understanding topics  
