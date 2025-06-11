@@ -71,11 +71,7 @@ Do you see the hello world?
 
 | Symptom                         | Likely cause                   | Quick fix                          |
 |---------------------------------|--------------------------------|------------------------------------|
-<<<<<<< HEAD
-| Build failed partway            | Ran out of memory|             |Use ``colcon build`` with ``--parallel-workers <num>`` flag| 
-=======
 | Build failed partway            | Ran out of memory| Use ``colcon build`` with ``--parallel-workers <num>`` flag| 
->>>>>>> f2201d5 (test)
 
 ---
 
