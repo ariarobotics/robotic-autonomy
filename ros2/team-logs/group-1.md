@@ -58,5 +58,5 @@ June 11
 - Lisa, Caitlyn, and Tanishka focused on getting the assigned tutorial done instead.
     - Caitlyn finished her four sections and is editting them. Also adding Lisa's work into her section since VSCode is buggy for her.
     - Lisa completed her work on a Google Doc.
-    - Tanishka is making good progress :D
+    - Tanishka has finished nodes and is almost done with topics for her sections.
 - Tomorrow will mostly focus on finishing the __Client Libraries__ second of the check list when mostly everyone is present.

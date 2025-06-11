@@ -72,29 +72,31 @@ All of the above topics mentioned in objectives make up what is ROS2. These topi
 ---
 ## 3. Topics
 
-1. **Nodes**  
+1. **RQT Graph**  
    ```bash
-   # code or command here
+   # rqt_graph
    ```
-   _Explanation: what’s happening and why it matters._
+   This command opens a graphical tool that visually shows the nodes and the topics they're connected through. For example, in the turtlesim setup, it will show how /teleop_turtle publishes to the __/turtle1/cmd_vel__ topic, and how __/turtlesim__ subscribes to it to move the turtle.  When systems get more complex, rqt_graph helps you quickly trace who’s talking to whom, what topics are in use, and spot if a node is lonely and disconnected. You can open rqt_graph by opening rqt and selecting __Plugins > Introspection > Node Graph__. You should see the above nodes and topic, as well as two actions around the periphery of the graph (let’s ignore those for now). If you hover your mouse over the topic in the center, you’ll see the color highlighting like in the image above.
 
 2. **Topics**  
    ```bash
-   # next command or snippet
+   # ros2 topic list
    ```
-   _Notes/pitfalls to watch for._
+   The __ros2 topic list__ command shows all the active topics in your ROS 2 system — basically, all the channels your nodes are using to send or receive information. Using ros2 topic list -t also shows the message type for each topic, which is important because both the publisher and subscriber must use the same type to communicate. This helps you understand what kind of data is flowing where, like position updates or velocity commands. __Pitfall__: If no topics show up, it usally means no nodes are cuurently publishing or subscribing-double check if the nodes are running. 
+   __Pitfall__: Just because a topic exists doesn't mean it's active-it may not be publishing any data yet. 
 
-3. **Services**  
-   ```bash
-   # next command or snippet
-   ```
-   _Notes/pitfalls to watch for._
 
-4. **Parameters**  
+3. **ros2 topic echo**  
    ```bash
-   # next command or snippet
+   # ros2 topic echo <topic_name>
    ```
-   _Notes/pitfalls to watch for._
+   The ros2 topic echo <topic_name> command lets you see the live data being published on a specific topic, like peeking into the conversation between nodes. For example, ros2 topic echo __/turtle1/cmd_vel__ shows velocity messages sent by the teleop node when you move the turtle with arrow keys. It's super helpful for debugging and understanding what data your robot is actually receiving or sending.__Pitfall__: At first, you might not see any outputs-that just means no data is being published yet, so the command is waiting. __Notes__: Use Ctrl+C to stop the echo command when you're done watching the data. The echo command creates a temporary node which will appear in tools like rqt_graph as a subscriber. 
+
+
+   ```bash
+   # ros2 topic echo /turtle1/cmd_vel
+   ```
+   The command __ros2 topic echo /turtle1 cmd_vel__ listens to the __/turtle1/cmd_vel__ topic and displays the velocity data being published to control the turtle. At first, nothing appears because it’s waiting for the /__teleop_turtle__ node to send data — which only happens when you press the arrow keys in the terminal running __turtle_teleop_key__. Once you start moving the turtle, the echo terminal will show live linear and angular velocity messages being published.
 
 5. **Actions**  
    ```bash
