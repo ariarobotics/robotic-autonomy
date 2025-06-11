@@ -43,9 +43,9 @@ A ROS 2 workspace is a directory that contains all packages (dependencies).
 The structure is as follows:
 .. code-block:: bash
 
-    .
+	ws_name
     └── src
-        └── examples
+        └── repo_name
             ├── CONTRIBUTING.md
             ├── LICENSE
             ├── rclcpp
