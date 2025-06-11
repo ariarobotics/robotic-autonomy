@@ -1,33 +1,63 @@
-> This should be a code-free explanation of ROS 2 and its components, i.e., Nodes, Topics, Services, etc.
-> Use all the material from the **CLI\_Basics** section and other resources such as: [Getting Started with ROS 2 – Ubuntu Tutorials](https://ubuntu.com/tutorials/getting-started-with-ros-2).
-
 # Chapter 00 – Introduction
 
-> **Goal:** One-sentence description of what the learner will achieve by the end of this chapter.
+> **Goal:** By the end of this chapter you should be familiar with the ROS2 fundemental concepts and their core commands.
 
 ---
 
 ## Objectives
 By the end of this chapter you will be able to:
-- Bullet 1
-- Bullet 2
-- …
+- Understand Nodes and its basics
+- Understand Topics and its basics
+- Understand Services and its basics
+- Understand Parameters
+- Understand Actions and its basics
 
 ---
 
 ## Prerequisites
-- Completion of Chapter `<NN−1>` (or "None" for Chapter 00 for example)  
 - ROS 2 Humble installed ([README](../../README.md))  
-- Any other tools/packages  
 
 ---
 
 ## 1. Why this matters
-_A short paragraph_ explaining why this topic is important and how it fits into the bigger ROS 2 picture.
+All of the above topics mentioned in objectives make up what is ROS2. These topics are fundemental to using ROS2 in a powerful way and having a greater understanding of these will prove to be a useful tool in robotic applications. They are the building blocks of robotic software.
 
 ---
 
-## 2. Step-by-step
+## 2. Nodes
+
+1. **Nodes**  
+   ```bash
+   # code or command here
+   ```
+   _Explanation: what’s happening and why it matters._
+
+2. **Topics**  
+   ```bash
+   # next command or snippet
+   ```
+   _Notes/pitfalls to watch for._
+
+3. **Services**  
+   ```bash
+   # next command or snippet
+   ```
+   _Notes/pitfalls to watch for._
+
+4. **Parameters**  
+   ```bash
+   # next command or snippet
+   ```
+   _Notes/pitfalls to watch for._
+
+5. **Actions**  
+   ```bash
+   # next command or snippet
+   ```
+   _Notes/pitfalls to watch for._
+
+---
+## 3. Topics
 
 1. **Nodes**  
    ```bash
@@ -61,7 +91,42 @@ _A short paragraph_ explaining why this topic is important and how it fits into 
 
 ---
 
-## 3. Try it
+
+## 3. Services
+
+1. **Nodes**  
+   ```bash
+   # code or command here
+   ```
+   _Explanation: what’s happening and why it matters._
+
+2. **Topics**  
+   ```bash
+   # next command or snippet
+   ```
+   _Notes/pitfalls to watch for._
+
+3. **Services**  
+   ```bash
+   # next command or snippet
+   ```
+   _Notes/pitfalls to watch for._
+
+4. **Parameters**  
+   ```bash
+   # next command or snippet
+   ```
+   _Notes/pitfalls to watch for._
+
+5. **Actions**  
+   ```bash
+   # next command or snippet
+   ```
+   _Notes/pitfalls to watch for._
+
+---
+
+## 4. Try it
 
 > A brief exercise to reinforce the chapter—what to run or modify next.
 
@@ -71,7 +136,7 @@ _A short paragraph_ explaining why this topic is important and how it fits into 
 
 ---
 
-## 4. Common errors & fixes (if any)
+## 5. Common errors & fixes (if any)
 
 | Symptom                         | Likely cause                   | Quick fix                          |
 |---------------------------------|--------------------------------|------------------------------------|
