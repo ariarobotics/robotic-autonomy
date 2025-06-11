@@ -39,7 +39,7 @@ For simplicity, we’ll be sourcing the basic ros2 install as our underlay for t
 **Creating a workspace**
 Create the basic workspace structure, with an src directory inside of your workspace root
 
-`` mkdir -p ~/ros2_ws/src ``
+`` mkdir -p ~/ros2_ws/src `` <br>
 `` cd ~/ros2_ws ``
 
 	We now need to populate our workspace with a repository
@@ -56,11 +56,11 @@ Source command
 ---
 
 ## 3. Try it
-`` cd src ``
-`` ros2 pkg create --build-type ament_cmake --license Apache-2.0 --node-name my_node my_package ``
-`` cd .. ``
-`` colcon build ``
-`` source install/local_setup.bash `` 
+`` cd src `` <br>
+`` ros2 pkg create --build-type ament_cmake --license Apache-2.0 --node-name my_node my_package `` <br>
+`` cd .. `` <br>
+`` colcon build `` <br>
+`` source install/local_setup.bash ``  <br>
 `` ros2 run my_package my_node ``
 
 Do you see the hello world?
