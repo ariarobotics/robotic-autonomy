@@ -17,12 +17,12 @@ A workspace is where you’ll write code and import repositories for your ROS2 p
 
 **What is a ROS2 workspace?**
 A ROS 2 workspace is a directory that contains all packages (dependencies).
-The structure is as follows:
 
 .. code-block:: bash
-    .
+
+	name_ws
     └── src
-        └── repo-name
+        └── repo_name
             ├── CONTRIBUTING.md
             ├── LICENSE
             ├── rclcpp
@@ -44,6 +44,7 @@ Underlays are the existing packages that workspace runs on (eg. ROS 2)
 Overlays are the packages that the workspace brings in itself.
 For simplicity, we’ll be sourcing the basic ros2 install as our underlay for this tutorial:
 ``source /opt/ros/humble/setup.bash``
+
 
 
 Build command 
