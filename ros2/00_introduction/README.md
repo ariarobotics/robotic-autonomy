@@ -106,36 +106,50 @@ All of the above topics mentioned in objectives make up what is ROS2. These topi
 
 
 ## 3. Services
+Services are a call-and-response form of communication between two nodes(reference nodes if needed). It does not use a publisher-subscriber model which relies on asynchronous communication where one sends it and the other receives it. __Services replace topics and instead of updating information continuously, allows for the client to choose when and what information to receive. It gives the client essentially the same control as the server.__ 
 
-1. **Nodes**  
-   ```bash
-   # code or command here
-   ```
-   _Explanation: what’s happening and why it matters._
+_Note that there can be many clients, but only one service server._
 
-2. **Topics**  
-   ```bash
-   # next command or snippet
-   ```
-   _Notes/pitfalls to watch for._
+![Service Model](../_assets/serviceex.gif)
 
-3. **Services**  
+1. **Accessing the Services List**  
    ```bash
-   # next command or snippet
+   ros2 service list
    ```
-   _Notes/pitfalls to watch for._
+   _This will open the full list of commands that are present using rqt(reference rqt here if needed) and the services for the two different nodes. When you first open them, notice how they both have services with the name `parameter` in them._
 
-4. **Parameters**  
-   ```bash
-   # next command or snippet
-   ```
-   _Notes/pitfalls to watch for._
+3. **Understand Services Types**  
+   _Service types describe how the call and response is structured. In this way, they are similar to topic types. We can differentiate them though because service types have two messages instead of just one. There is a message for the request and one for the response._
 
-5. **Actions**  
+4. **Finding Service Type**  
    ```bash
-   # next command or snippet
+   ros2 service type <service_name>
    ```
-   _Notes/pitfalls to watch for._
+   _This will return the type in your terminal. To see the types of all the active services, use ` ros2 service list -t`. The `-t` is what helps to display all the types for the services in the list. We use the type when needing to know which services have nodes that information can be moved through_
+
+5. **Finding Service Info**  
+   ```bash
+   ros2 service info <service_name>
+   ```
+   _This will return how many services and clients there are active. This is helpful when needing to make a request to a server and waiting for a response._
+
+6. **Finding a Service**
+   ```bash
+   ros2 service find <type_name>
+   ```
+   _Where type name can be those such as `std_srvs/Empty`, `std_srvs/SetBool`, `std_srvs/Trigger`, and others that are not predefined by ROS2. This is used to find all the services of that specific type._
+
+7. **Interface Showing**
+   ```bash
+   ros2 interface show <type_name>
+   ```
+   _This will show all the expected argument or information that should be passed through an internface. This section will be show on the top half of the response, seperated with a `---`. The bottom half is the structure of the response._
+
+8. **Directly Call A Service**
+   ```bash
+   ros2 service call <service_name> <service_type> <arguments>
+   ```
+   _This is used to manually call a service from the terminal. It is used to debug, test, and interact with the running services without writing code._
 
 ---
 
