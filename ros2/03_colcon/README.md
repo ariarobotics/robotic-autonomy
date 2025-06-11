@@ -60,7 +60,7 @@ Debugging
 
 | Symptom                         | Likely cause                   | Quick fix                          |
 |---------------------------------|--------------------------------|------------------------------------|
-| Build failed partway            | Ran out of memory| Use |``colcon build`` with ``--parallel-workers <num>`` flag| 
+| Build failed partway            | Ran out of memory| Use ``colcon build`` with ``--parallel-workers <num>`` flag| 
 
 ---
 
