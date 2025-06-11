@@ -1,3 +1,19 @@
+—-------------------------------------------------- INSTRUCTIONS—-—--------------------------------------------
+
+Use the template for the following three tutorials:
+  https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html
+ https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html
+ https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html
+
+Focus on the following:
+* What is **colcon**?
+* How do you compile and run different projects?
+* Be sure to explain what colcon is, gather all the commands used in these tutorials, and assume Chapter 02 as a prerequisite.
+
+—---------------------------------------------- START OF TUTORIAL —--------------------------------------------
+
+
+
 # Chapter 03 – Colcon
 
 > **Goal:** Learn how to install packages with Colcon. This will allow for the usage of different software required for robotics.
@@ -25,14 +41,14 @@ Colcon is ROS2’s build tool. It’s necessary for compiling and formatting ROS
 **What is a ROS2 workspace?**
 A ROS 2 workspace is a directory that contains all packages (dependencies).
 The structure is as follows:
-Workspace
+``Workspace
 └── src
     └── examples
         ├── CONTRIBUTING.md
         ├── LICENSE
         ├── rclcpp
         ├── rclpy
-        └── README.md
+        └── README.md``
 
 4 directories, 3 files
 
@@ -43,11 +59,11 @@ cd ~/ros2_ws
 
 **Underlays vs Overlays**
 VERY VERY BRIEF explanation
-Source command explanation
+Build command 
 
 colcon build --symlink-install --parallel-workers 4
 
-Debugging
+Source command
 	
 ---
 
