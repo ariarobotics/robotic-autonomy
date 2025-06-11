@@ -1,64 +1,58 @@
-Use the template for the following three tutorials:
-  [https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html)
-  [https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html)
-  [https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html)
+# Chapter 03 – Colcon
 
-Focus on the following:
-* What is **colcon**?
-* How do you compile and run different projects?
-* Be sure to explain what colcon is, gather all the commands used in these tutorials, and assume Chapter 02 as a prerequisite.
-
-# Chapter <03> – <Colcon>
-
-> **Goal:** One-sentence description of what the learner will achieve by the end of this chapter.
+> **Goal:** Learn how to install packages with Colcon. This will allow for the usage of different software required for robotics.
 
 ---
 
 ## Objectives
 By the end of this chapter you will be able to:
-- Bullet 1
-- Bullet 2
-- …
+- Build a Workspace using Colcon
+- Install packages with Colcon from any online source
 
 ---
 
 ## Prerequisites
-- Completion of Chapter `<NN−1>` (or "None" for Chapter 00 for example)  
+- Completion of Chapter ‘02`
 - ROS 2 Humble installed ([README](../../README.md))  
-- Any other tools/packages  
+- 
 
 ---
 
 ## 1. Why this matters
-_A short paragraph_ explaining why this topic is important and how it fits into the bigger ROS 2 picture.
-
----
-
+Colcon is ROS2’s build tool. It’s necessary for compiling and formatting ROS packages inside of a workspace. It’s analogous to Gradle for Java developers or Catkin for those familiar with ROS1.
 ## 2. Step-by-step
 
-1. **<Step 1 title>**  
-   ```bash
-   # code or command here
-   ```
-   _Explanation: what’s happening and why it matters._
+**What is a ROS2 workspace?**
+A ROS 2 workspace is a directory that contains all packages (dependencies).
+The structure is as follows:
+Workspace
+└── src
+    └── examples
+        ├── CONTRIBUTING.md
+        ├── LICENSE
+        ├── rclcpp
+        ├── rclpy
+        └── README.md
 
-2. **<Step 2 title>**  
-   ```bash
-   # next command or snippet
-   ```
-   _Notes/pitfalls to watch for._
+4 directories, 3 files
 
-3. … repeat as needed …
+**Creating a workspace**
+mkdir -p ~/ros2_ws/src
+cd ~/ros2_ws
+`git clone <GitHub link>
 
+**Underlays vs Overlays**
+VERY VERY BRIEF explanation
+Source command explanation
+
+colcon build --symlink-install --parallel-workers 4
+
+Debugging
+	
 ---
 
 ## 3. Try it
 
-> A brief exercise to reinforce the chapter—what to run or modify next.
-
-```bash
-# e.g. invoke a node, tweak a param, view output, etc.
-```
 
 ---
 
@@ -66,12 +60,9 @@ _A short paragraph_ explaining why this topic is important and how it fits into 
 
 | Symptom                         | Likely cause                   | Quick fix                          |
 |---------------------------------|--------------------------------|------------------------------------|
-| `command not found`             | You forgot to `source` the setup script. | `source install/setup.bash`        |
-| Node crashes on startup         | Bad parameter file or YAML indentation.   | Check syntax/indentation in your params file. |
-
+| Build failed partway            | Ran out of memory| Use |``colcon build`` with ``--parallel-workers <num>`` flag| 
 
 ---
 
 ## Further reading and references
 - Official ROS 2 docs: [Title of section](https://docs.ros.org/en/humble/…)
-- Any other link you have used and though is good.
