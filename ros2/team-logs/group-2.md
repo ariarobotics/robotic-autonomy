@@ -15,7 +15,7 @@
 ## Group Members  
 Please enter your github usernames here
 - Member 1: boraayhan  (Bora A.)
-- Member 2: peterluoyu (Peter Y.)
+- Member 2: Peter-Luo-Yu (Peter Y.)
 - Member 3: adambass2036 (Adam B.)
 
 ---
