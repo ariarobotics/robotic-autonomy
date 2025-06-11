@@ -30,40 +30,38 @@ A ROS 2 workspace is a directory that contains all packages (dependencies).
     4 directories, 3 files
 
 
-
-**Creating a workspace**
-Create the basic workspace structure, with an src directory inside of your workspace root
-
-``` mkdir -p ~/ros2_ws/src ``` <br>
-``` cd ~/ros2_ws ```
-
-
-
 **Underlays vs Overlays**
 Underlays are the existing packages that workspace runs on (eg. ROS 2)
 Overlays are the packages that the workspace brings in itself.
 For simplicity, we’ll be sourcing the basic ros2 install as our underlay for this tutorial:
 ``source /opt/ros/humble/setup.bash``
 
+**Creating a workspace**
+Create the basic workspace structure, with an src directory inside of your workspace root
 
+`` mkdir -p ~/ros2_ws/src ``
+`` cd ~/ros2_ws ``
 
-Build command 
+	We now need to populate our workspace with a repository
+	`` git clone https://github.com/ros/ros_tutorials.git ~/ros2_ws/src/example -b humble ``
 
-colcon build --symlink-install --parallel-workers 4
+**Build with Colcon** 
+
+`` colcon build --symlink-install --parallel-workers 4 ``
 
 Source command
 
-source install/setup.bash
+`` source install/setup.bash ``
 	
 ---
 
 ## 3. Try it
-cd src
-ros2 pkg create --build-type ament_cmake --license Apache-2.0 --node-name my_node my_package
-cd ..
-colcon build
-source install/local_setup.bash
-ros2 run my_package my_node
+`` cd src ``
+`` ros2 pkg create --build-type ament_cmake --license Apache-2.0 --node-name my_node my_package ``
+`` cd .. ``
+`` colcon build ``
+`` source install/local_setup.bash `` 
+`` ros2 run my_package my_node ``
 
 Do you see the hello world?
 
