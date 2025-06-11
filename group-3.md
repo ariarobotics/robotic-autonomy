@@ -14,9 +14,9 @@
 
 ## Group Members  
 Please enter your github usernames here
-- Member 1: boraayhan  (Bora A.)
-- Member 2: peterluoyu (Peter Y.)
-- Member 3: adambass2036 (Adam B.)
+- Member 1: IshaanDeshpande  
+- Member 2: ArnavMehta123  
+- Member 3: sullypalaia  
 
 ---
 You can find all the tutorials here: https://docs.ros.org/en/humble/Tutorials.html
@@ -40,8 +40,8 @@ You can find all the tutorials here: https://docs.ros.org/en/humble/Tutorials.ht
 ## Beginner: Client libraries  
 [Go to Client Libraries Tutorial](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries.html)
 
-- [x] Using colcon to build packages  
-- [x] Creating a workspace  
+- [ ] Using colcon to build packages  
+- [ ] Creating a workspace  
 - [ ] Creating a package  
 - [ ] Writing a simple publisher and subscriber (Python)  
 - [ ] Writing a simple service and client (Python)  
