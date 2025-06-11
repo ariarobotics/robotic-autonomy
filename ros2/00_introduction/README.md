@@ -131,9 +131,26 @@ Parameters are exactly that. They're a parameter (or an argument for broader cod
 
 1. **To display passable parameters for active nodes**  
    ```bash
-   ros2 param list <node_name>
+   $ ros2 param list
+   /teleop_turtle:
+      qos_overrides./parameter_events.publisher.depth
+      qos_overrides./parameter_events.publisher.durability
+      qos_overrides./parameter_events.publisher.history
+      qos_overrides./parameter_events.publisher.reliability
+      scale_angular
+      scale_linear
+      use_sim_time
+   /turtlesim:          # This is the Node name
+      background_b      # This is the Parameter name for that node
+      background_g
+      background_r
+      qos_overrides./parameter_events.publisher.depth
+      qos_overrides./parameter_events.publisher.durability
+      qos_overrides./parameter_events.publisher.history
+      qos_overrides./parameter_events.publisher.reliability
+      use_sim_time
    ```
-   _Node name is optional, but passing it will show all parameters that are specific to the node._
+   _`<node name>` can optionally be added to the end of the command, but passing it will show all parameters that are specific to that node._
 
 2. **To view all the values of a node's parameters**  
    ```bash
