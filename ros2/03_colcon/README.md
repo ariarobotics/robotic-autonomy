@@ -41,15 +41,18 @@ Colcon is ROS2’s build tool. It’s necessary for compiling and formatting ROS
 **What is a ROS2 workspace?**
 A ROS 2 workspace is a directory that contains all packages (dependencies).
 The structure is as follows:
-``Workspace
-└── src
-    └── examples
-        ├── CONTRIBUTING.md
-        ├── LICENSE
-        ├── rclcpp
-        ├── rclpy
-        └── README.md``
+.. code-block:: bash
 
+    .
+    └── src
+        └── examples
+            ├── CONTRIBUTING.md
+            ├── LICENSE
+            ├── rclcpp
+            ├── rclpy
+            └── README.md
+
+    4 directories, 3 files
 4 directories, 3 files
 
 **Creating a workspace**
