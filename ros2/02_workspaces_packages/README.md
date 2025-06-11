@@ -22,13 +22,15 @@ A ROS 2 workspace is a directory that contains all packages (dependencies).
 
 The structure is as follows:
 
-src/
-└── repo_name/
-├── CONTRIBUTING.md
-├── LICENSE
-├── rclcpp/
-├── rclpy/
-└── README.md
+The structure is as follows:
+
+    src/
+    └── repo_name/
+        ├── CONTRIBUTING.md
+        ├── LICENSE
+        ├── rclcpp/
+        ├── rclpy/
+        └── README.md
 
 
 4 directories, 3 files
