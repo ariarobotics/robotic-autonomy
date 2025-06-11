@@ -60,10 +60,8 @@ colcon build --symlink-install --parallel-workers 2``
 Source command
 Got to the root workspace directory first.
 
-``
-source install/setup.bash``
+``source install/setup.bash``
 
-	
 
 ## 3. Try it
 
@@ -80,3 +78,5 @@ source install/setup.bash``
 
 ## Further reading and references
 - Official ROS 2 docs: [Title of section](https://docs.ros.org/en/humble/…)
+
+
