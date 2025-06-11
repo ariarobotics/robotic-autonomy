@@ -15,7 +15,7 @@ By the end of this chapter you will be able to:
 ---
 
 ## Prerequisites
-- ROS 2 Humble installed ([README](../../README.md))  
+- ROS 2 Humble installed ([Offical Documentation](https://docs.ros.org/en/humble/Installation.html))  
 
 ---
 
@@ -198,11 +198,33 @@ Actions combine a lot of the topics that were discussed earlier on, but fundemen
 
 ## 4. Try it
 
-> A brief exercise to reinforce the chapter—what to run or modify next.
+__Let's do an exercise that focuses mainly on actions since they're a bit complex. For this, we can simply invoke an action that will make the turtle spin.__
+
+Open two teminals and run the two fundemental nodes of turtlesim.
 
 ```bash
-# e.g. invoke a node, tweak a param, view output, etc.
+ros2 run turtlesim turtlesim_node
+ros2 run turtlesim turtle_teleop_key
 ```
+Making a turtle spin or rotate is an action, so let's find which action we need to invoke to pass that action directly.
+
+```bash
+ros2 action list
+```
+Only one should appear which is exactly what we need. You can look at more information for the action that appears, but for the sake of this small exercise we'll skip to find out what needs to be passed for an action to be carried out.
+```bash
+ros2 interface show turtlesim/action/RotateAbsolute
+```
+Since we want to directly pass an action, we only need to pay attention to the first part of the output. If you remember, that's the structure for the goal request. This means that we'll need to pass in a theta value in radians.
+
+Now that we know what's needed to call an action, lets send a direct request.
+
+```bash
+ros2 action send_goal /turtle1/rotate_absolute turtlesim/action/RotateAbsolute "{theta: 1.46}"
+```
+The 1.46 can be changed as you so please, but if you look at the window with the turtle on it you should see it spinning. It is semi important to note that 1.46 is what degree the turtle will spin to, not how much it will spin.
+
+That's all there is! This was a farely easy and basic intro to actions with ROS2 and turtlesim.
 
 ---
 
@@ -212,10 +234,11 @@ Actions combine a lot of the topics that were discussed earlier on, but fundemen
 |---------------------------------|--------------------------------|------------------------------------|
 | `command not found`             | You forgot to `source` the setup script. | `source install/setup.bash`        |
 | Node crashes on startup         | Bad parameter file or YAML indentation.   | Check syntax/indentation in your params file. |
+| Node/Topic not found            | You typed the wrong one, or it doesn't exist. | Use `ros2 node/topic list` to check. |
 
 
 ---
 
 ## Further reading and references
 - Official ROS 2 docs: [Beginner: CLI Tools](https://docs.ros.org/en/humble/…)
-- Any other link you have used and though is good.
+- Personal notes on ROS 2 basics: [Crash Course to ROS2](https://www.notion.so/209bde9c918a804ea088eea56d9bc847?pvs=25)

@@ -41,9 +41,22 @@ You can find all the tutorials here: https://docs.ros.org/en/humble/Tutorials.ht
 ## Beginner: Client libraries  
 [Go to Client Libraries Tutorial](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries.html)
 
-- [ ] Using colcon to build packages  
-- [ ] Creating a workspace  
+- [x] Using colcon to build packages  
+- [x] Creating a workspace  
 - [ ] Creating a package  
 - [ ] Writing a simple publisher and subscriber (Python)  
 - [ ] Writing a simple service and client (Python)  
 - [ ] Using parameters in a class (Python)
+
+---
+
+## Group Progress Notes
+
+June 11
+- Since Lisa and Shibani are absent we chose to not move too far ahead with the __Client Libraries__ section.
+    - Caitlyn made documentation for them to assist with getting Colcon and workspaces working.
+- Lisa, Caitlyn, and Tanishka focused on getting the assigned tutorial done instead.
+    - Caitlyn finished her four sections and is editting them. Also adding Lisa's work into her section since VSCode is buggy for her.
+    - Lisa completed her work on a Google Doc.
+    - Tanishka is making good progress :D
+- Tomorrow will mostly focus on finishing the __Client Libraries__ second of the check list when mostly everyone is present.
