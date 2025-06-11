@@ -40,9 +40,9 @@ You can find all the tutorials here: https://docs.ros.org/en/humble/Tutorials.ht
 ## Beginner: Client libraries  
 [Go to Client Libraries Tutorial](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries.html)
 
-- [ ] Using colcon to build packages  
-- [ ] Creating a workspace  
-- [ ] Creating a package  
+- [x] Using colcon to build packages  
+- [x] Creating a workspace  
+- [x] Creating a package  
 - [ ] Writing a simple publisher and subscriber (Python)  
 - [ ] Writing a simple service and client (Python)  
 - [ ] Using parameters in a class (Python)
