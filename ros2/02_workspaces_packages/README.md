@@ -34,8 +34,8 @@ A ROS 2 workspace is a directory that contains all packages (dependencies).
 **Creating a workspace**
 Create the basic workspace structure, with an src directory inside of your workspace root
 
-``` mkdir -p ~/ros2_ws/src ```
-``` cd ~/ros2_ws ```
+``` mkdir -p ~/ros2_ws/src 
+    cd ~/ros2_ws ```
 
 
 
