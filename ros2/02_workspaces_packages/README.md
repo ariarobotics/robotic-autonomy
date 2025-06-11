@@ -9,8 +9,6 @@ By the end of this chapter you will be able to:
 ## Prerequisites
 - Completion of Chapter ‘01`
 - ROS 2 Humble installed ([README](../../README.md))  
-- 
-
 ---
 
 ## 1. Why this matters
@@ -19,21 +17,21 @@ A workspace is where you’ll write code and import repositories for your ROS2 p
 
 **What is a ROS2 workspace?**
 A ROS 2 workspace is a directory that contains all packages (dependencies).
-
 The structure is as follows:
 
-The structure is as follows:
+.. code-block:: bash
+    .
+    └── src
+        └── repo-name
+            ├── CONTRIBUTING.md
+            ├── LICENSE
+            ├── rclcpp
+            ├── rclpy
+            └── README.md
 
-    src/
-    └── repo_name/
-        ├── CONTRIBUTING.md
-        ├── LICENSE
-        ├── rclcpp/
-        ├── rclpy/
-        └── README.md
+    4 directories, 3 files
 
 
-4 directories, 3 files
 
 **Creating a workspace**
 Create the basic workspace structure, with an src directory inside of your workspace root
@@ -44,6 +42,8 @@ cd ~/ros2_ws
 **Underlays vs Overlays**
 Underlays are the existing packages that workspace runs on (eg. ROS 2)
 Overlays are the packages that the workspace brings in itself.
+For simplicity, we’ll be sourcing the basic ros2 install as our underlay for this tutorial:
+``source /opt/ros/humble/setup.bash``
 
 
 Build command 
