@@ -18,9 +18,7 @@ A workspace is where you’ll write code and import repositories for your ROS2 p
 **What is a ROS2 workspace?**
 A ROS 2 workspace is a directory that contains all packages (dependencies).
 
-.. code-block:: bash
-
-	name_ws
+	ws_name
     └── src
         └── repo_name
             ├── CONTRIBUTING.md
