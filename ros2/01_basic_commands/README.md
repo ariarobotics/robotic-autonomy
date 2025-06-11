@@ -1,0 +1,1 @@
+> This should be a step-by-step tutorial on how to use different commands. Since Chapter 00 is a prerequisite, you can skip explanations about the components and focus on explaining what each command does, what the arguments are, and what possible variations exist.

@@ -14,9 +14,10 @@
 
 ## Group Members  
 Please enter your github usernames here
-- Member 1: Peter  
-- Member 2: Bora 
-- Member 3: Adam 
+- Member 1: Midnight Kaze
+- Member 2: 44lisa-rai
+- Member 3: tanishka-cyber
+- Member 4: shabanis2100
 
 ---
 You can find all the tutorials here: https://docs.ros.org/en/humble/Tutorials.html
