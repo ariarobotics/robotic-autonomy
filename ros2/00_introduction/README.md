@@ -155,41 +155,44 @@ Parameters are exactly that. They're a parameter (or an argument for broader cod
    ```bash
    ros2 param set <node_name> <parameter_name> <value>
    ```
-It should be noted that any changed to parameters are __not__ permanent. If you plan to use a set parameter over multiple sessions it's important to save and load them with a `.yaml` file.
+It should be noted that any changes to parameters are __not__ permanent. If you plan to use a set of parameter over multiple sessions it's important to save and load them with a `.yaml` file (commands 2 and 3).
 
 ---
 
 ## 5. Actions
+Actions combine a lot of the topics that were discussed earlier on, but fundementally they are broken down into three parts: __Goal Service, Feedback Topic and Result Service__. 
 
-1. **Nodes**  
+1. **To view all actions within the ROS system**  
    ```bash
-   # code or command here
+   ros2 action list
    ```
-   _Explanation: what’s happening and why it matters._
+   _Tack on a `-t` to list the action types as well. You can also search for the type of one singular action with `ros2 action type <action_name>`._
 
-2. **Topics**  
+2. **To view more infomation about an action**  
    ```bash
-   # next command or snippet
+   ros2 action info <action_name>
    ```
-   _Notes/pitfalls to watch for._
+   _This will return the action name, the node(s) that have an action client for the action, and the node(s) that have an action server for the action._
 
-3. **Services**  
+3. **To "interface show" an action**  
    ```bash
-   # next command or snippet
+   ros2 interface show <action_type>
    ```
-   _Notes/pitfalls to watch for._
+   _Three sections will appear, being separated by `---`:_
 
-4. **Parameters**  
-   ```bash
-   # next command or snippet
-   ```
-   _Notes/pitfalls to watch for._
+    _- Structure for the goal request_
 
-5. **Actions**  
+    _- Structure for the result response_
+
+    _- Structure for the feedback_
+
+    _This is needed for the next command which is how you send an action. Knowing the format is key to passing a successful action._
+
+4. **To send a goal (which is sending a direct action request)**  
    ```bash
-   # next command or snippet
+   ros2 action send_goal <action_name> <action_type> <values>
    ```
-   _Notes/pitfalls to watch for._
+   _`values` needs to be in __yaml__ format in order for the action to be carried out. You can also get the live feedback by tacking on `--feedback` to the very end of the command._
 
 ---
 
@@ -214,5 +217,5 @@ It should be noted that any changed to parameters are __not__ permanent. If you 
 ---
 
 ## Further reading and references
-- Official ROS 2 docs: [Title of section](https://docs.ros.org/en/humble/…)
+- Official ROS 2 docs: [Beginner: CLI Tools](https://docs.ros.org/en/humble/…)
 - Any other link you have used and though is good.
