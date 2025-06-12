@@ -1,4 +1,4 @@
-# Chapter <01> – <Basic Commands>
+# Chapter 01 - Basic Commands
 
 > **Goal:** Use introductory knowledge of nodes, topics, services, and actions to be able to effectively learn and use basic ros2 commands.
 
@@ -15,7 +15,7 @@ By the end of this chapter you will be able to:
 ---
 
 ## Prerequisites
-- Completion of Chapter `<00−Introduction>` (or "None" for Chapter 00 for example)  
+- Completion of Chapter `<00−Introduction>` 
 - ROS 2 Humble installed ([README](../../README.md))  
 - X11 server set up from host (if using dev container)  
 
