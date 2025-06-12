@@ -36,8 +36,7 @@ _Being able to use basic ros2 commands is necessary to be able to use packages a
 
 2. **<General Commands>**  
    ```bash
-   # ros2 <node/topic/service> type
-  -Finds out the type of a node, topic, or service
+   # ros2 <node/topic/service> type -Finds out the type of a node, topic, or service
 
 ros2 interface show <type>
   -Displays interface definition
