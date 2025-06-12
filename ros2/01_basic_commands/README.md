@@ -85,7 +85,6 @@ eg. In turtlesim the command ros2 run turtlesim turtle_teleop_key --ros-args --r
 ```bash
 #ros2 run <package> <executable> -ros2 run launches an executable from a package in this case, eg. turtlesim is the package
 ```
-   _These commands are specific to nodes.._
 
 4. **Topic Commands**
 
@@ -116,7 +115,6 @@ This prints the bandwidth of a topic
 ```
 Allows you to call a service
    ```
-_These commands are specific to topics.._
 
 6. **Param Commands**
 
@@ -140,15 +138,11 @@ Allows you to view all of a node’s parameter values
 ```
 Allows you to load parameters from a file to a running node
 
-_These commands are specific to params.._
-
 7. **Action Commands**
    
 ```bash
 #ros2 run <package> <executable> -ros2 run launches an executable from a package in this case, eg. turtlesim is the package
 ```
-
-_These commands are specific to actions.._
 
 ---
 
@@ -156,12 +150,10 @@ _These commands are specific to actions.._
 
 ## 3. Try it
 
-> A brief exercise to reinforce the chapter—what to run or modify next.
-
 ```bash
-# ros2 action send_goal <action> <type> <values>
-  -Sends a goal to an action server; the user (or server) may choose to cancel the action
+# ros2 topic pub /{turtle_name}/cmd_vel geometry_msgs/msg/Twist {"linear: {x: 1.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.0}}"
 ```
+This will publish data to the /{turtle_name}/cmd_vel topic (the topic in which velocity data is sent through), creating a circle.
 
 ---
 
