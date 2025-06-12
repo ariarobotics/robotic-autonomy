@@ -32,25 +32,25 @@ _Being able to use basic ros2 commands is necessary to be able to use packages a
    ```bash
    # ros2 <command> <verb>
    ```
-   The keyword ‘ros2‘ is the unique entry point for the CLI. Every ROS 2 command starts with the ros2 keyword, followed by a command, a verb, and possibly positional/optional arguments._
+The keyword ‘ros2‘ is the unique entry point for the CLI. Every ROS 2 command starts with the ros2 keyword, followed by a command, a verb, and possibly positional/optional arguments._
 
 3. **General Commands**  
    ```bash
       #ros2 <node/topic/service> type
    ```
-   Finds out the type of a node, topic, or service
+Finds out the type of a node, topic, or service
 
    
    ```bash
    #ros2 interface show <type>
    ```
-  Displays interface definition
+Displays interface definition
 
 
    ```bash
    #ros2 run <package_name> <executable_name> __node:=<new_node_name> <old_name>:=<new_name>
    ```
-  It allows you to change the name of a topic, node or service therefore modifying the node.
+It allows you to change the name of a topic, node or service therefore modifying the node.
 eg. In turtlesim the command ros2 run turtlesim turtle_teleop_key --ros-args --remap turtle1/cmd_vel:=turtle2/cmd_vel change the name of the topic to modify the node that is making the other turtle (turtle2) that was spawned using /spawn work separately than the other turtle (turtle1, the original)
 
 
