@@ -28,13 +28,13 @@ _Being able to use basic ros2 commands is necessary to be able to use packages a
 
 ## 2. Step-by-step
 
-1. **<Command Structure>**  
+1. **Command Structure**  
    ```bash
    # ros2 <command> <verb>
    ```
    _The keyword ‘ros2‘ is the unique entry point for the CLI. Every ROS 2 command starts with the ros2 keyword, followed by a command, a verb, and possibly positional/optional arguments._
 
-2. **<General Commands>**  
+2. **General Commands**  
    ```bash
    # ros2 <node/topic/service> type -Finds out the type of a node, topic, or service
 
@@ -60,13 +60,13 @@ ros2 <node/topic/service> find <type>
   -Returns a list of nodes/topics/services with a specific type
    ```
 
-3. **<Node Commands>**  
+3. **Node Commands**  
    ```bash
    # ros2 run <package> <executable> -ros2 run launches an executable from a package in this case, eg. turtlesim is the package
    ```
    _These commands are specific to nodes.._
 
-4. **<Topic Commands>**  
+4. **Topic Commands**  
    ```bash
    # ros2 topic pub <topic> <type> <values>
   -”--once” will publish to the topic only once
@@ -81,14 +81,14 @@ ros2 topic hz <topic>
 ros2 topic bw <topic>
   -This prints the bandwidth of a topic
 
-Services:
--
+5. **Topic Commands** 
+   ```bash
 ros2 service call <service> <type> <values>
   -Allows you to call a service
    ```
    _These commands are specific to topics.._
 
-5. **<Param Commands>**  
+6. **<Param Commands>**  
    ```bash
    # ros2 param get <node> <parameter>
   -Displays the current type and value of a parameter
@@ -104,7 +104,7 @@ ros2 param load <node> <file>
    ```
    _These commands are specific to params.._
 
-6. **<Action Commands>**  
+7. **<Action Commands>**  
    ```bash
    # ros2 run <package> <executable> -ros2 run launches an executable from a package in this case, eg. turtlesim is the package
    ```
