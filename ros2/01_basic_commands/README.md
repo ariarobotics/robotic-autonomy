@@ -22,7 +22,7 @@ By the end of this chapter you will be able to:
 ---
 
 ## 1. Why this matters
-_Being able to use basic ros2 commands is necessary to be able to use packages and manipulate or read from the ROS graph.
+Being able to use basic ros2 commands is necessary to be able to use packages and manipulate or read from the ROS graph.
 
 ---
 
@@ -33,7 +33,7 @@ _Being able to use basic ros2 commands is necessary to be able to use packages a
 ```bash
 # ros2 <command> <verb>
 ```
-The keyword ‘ros2‘ is the unique entry point for the CLI. Every ROS 2 command starts with the ros2 keyword, followed by a command, a verb, and possibly positional/optional arguments._
+The keyword ‘ros2‘ is the unique entry point for the CLI. Every ROS 2 command starts with the ros2 keyword, followed by a command, a verb, and possibly positional/optional arguments.
 
 3. **General Commands**
    
@@ -82,54 +82,73 @@ eg. In turtlesim the command ros2 run turtlesim turtle_teleop_key --ros-args --r
   Returns a list of nodes/topics/services with a specific type
 
 3. **Node Commands**  
-   ```bash
-   #ros2 run <package> <executable> -ros2 run launches an executable from a package in this case, eg. turtlesim is the package
-   ```
+```bash
+#ros2 run <package> <executable> -ros2 run launches an executable from a package in this case, eg. turtlesim is the package
+```
    _These commands are specific to nodes.._
 
-4. **Topic Commands**  
-   ```bash
-   # ros2 topic pub <topic> <type> <values>
-  -”--once” will publish to the topic only once
-  -”--rate <frequency>” will publish to the topic at a specific frequency
+4. **Topic Commands**
 
-ros2 topic echo <topic>  eg. ros2 topic echo /turtle1/cmd_vel
-  -This will print data sent via a topic to the command line
+```bash
+#ros2 topic pub <topic> <type> <values>
+”--once” will publish to the topic only once
+”--rate <frequency>” will publish to the topic at a specific frequency
 
-ros2 topic hz <topic>
-  -Allows you to see the rate at which the data is being published
+```bash
+#ros2 topic echo <topic>  eg. ros2 topic echo /turtle1/cmd_vel
+```
+This will print data sent via a topic to the command line
 
-ros2 topic bw <topic>
-  -This prints the bandwidth of a topic
+```bash
+#ros2 topic hz <topic>
+```
+Allows you to see the rate at which the data is being published
 
-5. **Topic Commands** 
-   ```bash
-ros2 service call <service> <type> <values>
-  -Allows you to call a service
+```bash
+#ros2 topic bw <topic>
+```
+This prints the bandwidth of a topic
+
+5. **Service Commands**
+   
+```bash
+#ros2 service call <service> <type> <values>
+```
+Allows you to call a service
    ```
-   _These commands are specific to topics.._
+_These commands are specific to topics.._
 
-6. **<Param Commands>**  
-   ```bash
-   # ros2 param get <node> <parameter>
-  -Displays the current type and value of a parameter
+6. **Param Commands**
 
-ros2 param set <node> <parameter> <value>
-  -This sets values for the parameters of a node
+```bash
+#ros2 param get <node> <parameter>
+```
+Displays the current type and value of a parameter
 
-ros2 param dump <node>
-  -Allows you to view all of a node’s parameter values
+```bash
+#ros2 param set <node> <parameter> <value>
+```
+This sets values for the parameters of a node
 
-ros2 param load <node> <file>
-  -Allows you to load parameters from a file to a running node
-   ```
-   _These commands are specific to params.._
+```bash
+#ros2 param dump <node>
+```
+Allows you to view all of a node’s parameter values
 
-7. **<Action Commands>**  
-   ```bash
-   # ros2 run <package> <executable> -ros2 run launches an executable from a package in this case, eg. turtlesim is the package
-   ```
-   _These commands are specific to actions.._
+```bash
+#ros2 param load <node> <file>
+```
+Allows you to load parameters from a file to a running node
+
+_These commands are specific to params.._
+
+7. **Action Commands**
+   
+```bash
+#ros2 run <package> <executable> -ros2 run launches an executable from a package in this case, eg. turtlesim is the package
+```
+
+_These commands are specific to actions.._
 
 ---
 
