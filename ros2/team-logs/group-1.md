@@ -60,3 +60,8 @@ June 11
     - Lisa completed her work on a Google Doc.
     - Tanishka has finished nodes and is almost done with topics for her sections.
 - Tomorrow will mostly focus on finishing the __Client Libraries__ second of the check list when mostly everyone is present.
+---
+June 12
+- Caitlyn got through everything and started working on the mini lab. Lisa is having trouble setting everything up, but we're slowly working through it (having troubles with opening the Dev Container and Linux issues). Shibani and Tanishka were absent today.
+- Next week will focus on getting everyone caught up and continuing to work on the mini lab once we all feel comfortable with the base concepts.
+    - Caitlyn will make slowly and steady progress that's easily explainable.
