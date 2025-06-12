@@ -15,7 +15,7 @@ By the end of this chapter you will be able to:
 ---
 
 ## Prerequisites
-- Completion of Chapter `<00−Introduction>` 
+- Completion of Chapter `00−Introduction` 
 - ROS 2 Humble installed ([README](../../README.md))  
 - X11 server set up from host (if using dev container)  
 
