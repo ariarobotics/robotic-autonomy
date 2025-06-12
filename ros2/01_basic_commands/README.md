@@ -37,28 +37,38 @@ _Being able to use basic ros2 commands is necessary to be able to use packages a
 2. **General Commands**  
    ```bash
 # ros2 <node/topic/service> type -Finds out the type of a node, topic, or service
+   ```bash
+   #ros2 interface show <type>
+   ```
+  Displays interface definition
 
-#ros2 interface show <type>
-  -Displays interface definition
-
-#ros2 run <package_name> <executable_name> __node:=<new_node_name> <old_name>:=<new_name>
-  -It allows you to change the name of a topic, node or service therefore modifying the node.
+   ```bash
+   #ros2 run <package_name> <executable_name> __node:=<new_node_name> <old_name>:=<new_name>
+   ```
+  It allows you to change the name of a topic, node or service therefore modifying the node.
 eg. In turtlesim the command ros2 run turtlesim turtle_teleop_key --ros-args --remap turtle1/cmd_vel:=turtle2/cmd_vel change the name of the topic to modify the node that is making the other turtle (turtle2) that was spawned using /spawn work separately than the other turtle (turtle1, the original)
 
-#ros2 <node/topic/service> list
-  -Shows the list of all the nodes, topics, or services in the system
-  -Adding “-t” will also show the types of each of the nodes/topics/services in the list
-
-#ros2 bag record <topic_name>
-  -Records the data published to a topic
-  -Adding “-o” allows the user to name the recording
-
-#ros2 <node/topic/service> info
-  -returns a list of subscribers, publishers, services, and actions
-
-#ros2 <node/topic/service> find <type>
-  -Returns a list of nodes/topics/services with a specific type
+   ```bash
+   #ros2 <node/topic/service> list
    ```
+  Shows the list of all the nodes, topics, or services in the system
+  Adding “-t” will also show the types of each of the nodes/topics/services in the list
+
+   ```bash
+   #ros2 bag record <topic_name>
+   ```
+  Records the data published to a topic
+  Adding “-o” allows the user to name the recording
+
+   ```bash
+   #ros2 <node/topic/service> info
+   ```
+  Returns a list of subscribers, publishers, services, and actions
+
+   ```bash
+   #ros2 <node/topic/service> find <type>
+   ```
+  Returns a list of nodes/topics/services with a specific type
 
 3. **Node Commands**  
    ```bash
