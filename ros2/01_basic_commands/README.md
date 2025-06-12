@@ -30,16 +30,16 @@ _Being able to use basic ros2 commands is necessary to be able to use packages a
 
 1. **Command Structure**
 
-   ```bash
-   # ros2 <command> <verb>
-   ```
+```bash
+# ros2 <command> <verb>
+```
 The keyword ‘ros2‘ is the unique entry point for the CLI. Every ROS 2 command starts with the ros2 keyword, followed by a command, a verb, and possibly positional/optional arguments._
 
 3. **General Commands**
    
-   ```bash
-      #ros2 <node/topic/service> type
-   ```
+```bash
+#ros2 <node/topic/service> type
+```
 Finds out the type of a node, topic, or service
 
    
