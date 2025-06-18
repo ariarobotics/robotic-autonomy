@@ -14,7 +14,7 @@
 
 ## Group Members  
 Please enter your github usernames here
-- Member 1: Midnight Kaze
+- Member 1: MidnightKaze
 - Member 2: 44lisa-rai
 - Member 3: tanishka-cyber
 - Member 4: shabanis2100
@@ -43,10 +43,10 @@ You can find all the tutorials here: https://docs.ros.org/en/humble/Tutorials.ht
 
 - [x] Using colcon to build packages  
 - [x] Creating a workspace  
-- [ ] Creating a package  
-- [ ] Writing a simple publisher and subscriber (Python)  
-- [ ] Writing a simple service and client (Python)  
-- [ ] Using parameters in a class (Python)
+- [x] Creating a package  
+- [x] Writing a simple publisher and subscriber (Python)  
+- [x] Writing a simple service and client (Python)  
+- [x] Using parameters in a class (Python)
 
 ---
 
