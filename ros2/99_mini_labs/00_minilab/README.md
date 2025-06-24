@@ -10,5 +10,6 @@ Turn *turtlesim* into a poor-man's spirograph: publish velocity commands that ma
 * pen color (spirograph) - sets the pen color
   
 ## Screenshots
-* ![Screenshot from 2025-06-24 07-58-53](https://github.com/user-attachments/assets/801473f6-2669-4b2f-803e-3ed2b358c9f3)
-* ![Screenshot from 2025-06-24 09-32-19](https://github.com/user-attachments/assets/0939c808-7def-4262-9fea-c834065b1aaf)
+![Screenshot from 2025-06-24 07-58-53](https://github.com/user-attachments/assets/801473f6-2669-4b2f-803e-3ed2b358c9f3)
+
+![Screenshot from 2025-06-24 09-32-19](https://github.com/user-attachments/assets/0939c808-7def-4262-9fea-c834065b1aaf)
