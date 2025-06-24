@@ -13,9 +13,9 @@ class Spirograph(Node):
         self.publisher = self.create_publisher(Twist, '/turtle1/cmd_vel', 10)
         self.subscription = self.create_subscription(Pose, '/turtle1/pose', self.pose_callback, 10)
 
-        self.declare_parameter('radius', 5.0)
+        self.declare_parameter('radius', 15.0)
         self.declare_parameter('speed', 1.3)
-        self.declare_parameter('petals', 8)
+        self.declare_parameter('petals', 1)
         self.declare_parameter('pen_color', [255, 0, 255])
 
         self.set_pen_client = self.create_client(SetPen, '/turtle1/set_pen')
